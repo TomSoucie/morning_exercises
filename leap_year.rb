@@ -2,7 +2,7 @@
 def leap_year(current)
   leap_count = 0
   while leap_count < 25
-    (current..2044).each do |year|
+    (current..2140).each do |year|
       if year % 400 == 0
         puts year
         leap_count += 1
