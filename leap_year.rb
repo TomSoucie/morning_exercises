@@ -1,4 +1,3 @@
-#code will output next 25 leap years based on the current year
 
 def leap_year(current)
   leap_count = 0
