@@ -11,3 +11,5 @@ night_shifts.each do |instructor|
 end
 
 puts shift_count
+
+shift_count.each { |k, v| puts "#{k} worked #{v} night shift" }
