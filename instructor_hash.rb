@@ -10,6 +10,8 @@ night_shifts.each do |instructor|
   end
 end
 
-puts shift_count
+#puts shift_count
 
-shift_count.each { |k, v| puts "#{k} worked #{v} night shift" }
+#shift_count.each { |k, v| puts "#{k} worked #{v} night shift" }
+
+shift_count.sort_by { |k, v| -v }.each { |el| puts "#{el[0]} worked #{el[1]} shifts" }
