@@ -15,4 +15,10 @@ class TextScannerTest < Minitest::Test
     assert t = TextScanner.new("./lib/alice.txt")
   end
 
+  def test_the_scanner_can_count
+    t = TextScanner.new("./lib/alice.txt")
+
+    assert_equal 645, t.word_count
+  end
+
 end
