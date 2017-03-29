@@ -8,9 +8,16 @@ class Scheduler
   end
 
   def bracket
-    @teams.each_with_index { |el, i| @bracket << [el[i], el[-(i+1)]] }
-    @bracket
+    number_games = (@teams.length - 1)
+    number_games.times do |i|
+      number_games.times do |i|
+        @bracket << [@teams[i], @teams[-(i+1)]]
+      end
+      @teams.rotate(1)
+    end
+    @bracket.uniq
   end
+
 end
 
 schedule = Scheduler.new
