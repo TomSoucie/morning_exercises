@@ -1,0 +1,3 @@
+class HashMaker
+  
+end 
