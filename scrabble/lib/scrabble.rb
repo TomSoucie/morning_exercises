@@ -1,7 +1,12 @@
 class Scrabble
 
   def score(word)
-    1
+    if word == nil
+      0
+    else
+      word = word.upcase.split("")
+      word.inject(0) { |sum, letter| sum + point_values[letter] }
+    end 
   end
 
   def point_values
