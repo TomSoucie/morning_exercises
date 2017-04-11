@@ -13,6 +13,6 @@ class AllergyTest < Minitest::Test
   def test_score_of_3_returns_egg_and_fish
     a = Allergy.new(3)
 
-    assert_equal
+    assert_equal ["eggs", "fish"], a.allergy_finder
   end
 end

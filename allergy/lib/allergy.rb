@@ -1,8 +1,10 @@
+require './lib/allergens_module'
+
 class Allergy
-  require Allergens
+  include Allergens
 
   def initialize(score)
     @score = score
   end
-  
+
 end
