@@ -1,7 +1,8 @@
 class ReversePolishNotation
   
   def initialize
-    
+    @order = []
+    get_input
   end
 
   def get_input
